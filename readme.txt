@@ -52,7 +52,7 @@ My Photography bundles the following resources:
 
 == Changelog ==
 
-= 1.3 - 2021-08-18
+= 1.4 - 2021-08-19
 * Small fixes
 
 = 1.0 - 2021-08-14

@@ -16,11 +16,6 @@ A lightweight theme for your photography posts.
 
 A lightweight theme for your photography posts. Displaying blog as your portfolio in masonry style ( Pinterest style ). You can add social media links to the menu, set link colors, and set 404 image. It is compatible with blocks and page builders (like: Beaver Builder and Elementor). Developed using Bootstrap 5 CSS framework. 
 
-== Installation ==
-
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
 
 == Frequently Asked Questions ==
 

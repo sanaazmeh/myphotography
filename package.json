@@ -1,0 +1,29 @@
+{
+  "name": "myphotography",
+  "version": "1.3",
+  "description": "My photography WordPress theme",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:css",
+    "bundle": "dir-archiver --src ../myphotography --dest ../myphotography.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist scss style.css.map",
+    "bundle2": "dir-archiver --src myphotography --dest myphotography.zip --exclude myphotography/.DS_Store myphotography/.stylelintrc.json myphotography/.eslintrc myphotography/.git myphotography/.gitattributes myphotography/.github myphotography/.gitignore myphotography/README.md myphotography/composer.json myphotography/composer.lock myphotography/node_modules myphotography/vendor myphotography/package-lock.json myphotography/package.json myphotography/.travis.yml myphotography/phpcs.xml.dist myphotography/scss myphotography/style.css.map"
+  },
+  "keywords": [
+    "photography",
+    "wordpress",
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Sana Azmeh",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "autoprefixer": "^10.3.0",
+    "bootstrap": "^5.0.2",
+    "dir-archiver": "^1.2.0",
+    "postcss-cli": "^8.3.1"
+  }
+}

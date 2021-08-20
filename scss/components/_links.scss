@@ -1,0 +1,32 @@
+@use "../custom" as *;
+
+.posts-navigation{
+	 .nav-links {
+			padding: 10px;
+			display: flex;
+			text-align: center;
+			align-items: center;
+  justify-content: center;
+			
+			.nav-next,.nav-previous { 
+				margin: 10px;
+			}
+	}
+}
+
+.post-navigation {
+	 .nav-links {
+			padding: 10px;
+			
+			.nav-next {
+				text-align: right;
+			}
+			.nav-previous { 
+				text-align: left;
+			}
+	}
+}
+
+.tags-links , .cat-links { 
+  padding: 10px;
+}

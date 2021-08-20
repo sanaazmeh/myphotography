@@ -1,0 +1,21 @@
+
+@use "../custom" as *;
+
+
+.search-form {
+	width:100%;
+	display:flex;
+	label {
+		width:auto;
+	}
+	// .search-field{
+	// 	width:95%;
+	// 	padding:5px 10px;
+	// 	border: 1px solid #555555;
+	// }
+	// .search-submit{
+	// 	width:50px;
+	// 	border: none;
+	// 	background-color:transparent;
+	// }
+}

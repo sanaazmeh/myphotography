@@ -1,0 +1,14 @@
+@use "custom";
+
+
+// Import the components
+@use "components/links";
+@use "components/typography";
+
+
+//Import the sections
+@use "sections/navbar";
+@use "sections/portfolio";
+@use "sections/footer";
+@use "sections/comments";
+@use "sections/pagenotfound";

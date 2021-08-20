@@ -1,0 +1,35 @@
+@use "../custom" as *;
+
+.navbar-nav {
+	ul.dropdown-menu{
+		border:none;
+	}
+
+	 a.dropdown-item {
+		text-align: left;
+	}
+	a.nav-link.dropdown-toggle.show, a.nav-link.dropdown-toggle.show:active, a.nav-link.dropdown-toggle.show:focus {
+		outline: none;
+	}
+	
+}
+
+.navbar {
+	#bloglogo{ 
+		max-width:225px; 
+		max-height:100px;
+	}
+}
+@media screen and (max-width: 992px){
+	.navbar-nav {
+		 a.dropdown-item {
+			text-align: center;
+		}
+	}
+	.navbar {
+		#bloglogo{ 
+			max-width:175px; 
+			max-height:100px;
+		}
+	}
+}

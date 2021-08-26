@@ -9,7 +9,7 @@
 
 if ( ! defined( 'MYPHOTOGRAPHY_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'MYPHOTOGRAPHY_VERSION', '1.4' );
+	define( 'MYPHOTOGRAPHY_VERSION', '1.5' );
 }
 
 if ( ! function_exists( 'myphotography_setup' ) ) :

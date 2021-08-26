@@ -6,7 +6,7 @@ Tags: photography, blog, grid-layout, one-column, featured-image-header, feature
 Requires at least: 5.2
 Tested up to: 5.8
 Requires PHP: 7.0
-Stable tag: 1.4
+Stable tag: 1.5
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,11 +51,13 @@ My Photography bundles the following resources:
 
 
 == Changelog ==
+= 1.5 - 2021-08-25 =
+* Fixed pagination issue in blog.
 
-= 1.4 - 2021-08-19
+= 1.4 - 2021-08-19 = 
 * Small fixes
 
-= 1.0 - 2021-08-14
+= 1.0 - 2021-08-14 =
 * Initial release
 
 

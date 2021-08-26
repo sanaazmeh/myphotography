@@ -20,9 +20,13 @@ get_header();
 		<?php
 			global $wp_query;
 
+
 			$myphotography_modifications = array();
 
 			$myphotography_modifications['meta_query'][] = array( 'key' => '_thumbnail_id' );
+
+			// Get current page and append to custom query parameters array.
+			// $myphotography_modifications['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 
 			$myphotography_args = array_merge( 
 				$wp_query->query_vars, 
@@ -32,6 +36,11 @@ get_header();
 
 			$myphotography_query = new WP_Query( $myphotography_args );
 
+			// Pagination fix.
+			$myphotography_temp_query = $wp_query;
+			$wp_query                 = NULL;
+			$wp_query   = $myphotography_query;
+
 			if ( $myphotography_query->have_posts() ) :
 
 				if ( is_home() && ! is_front_page() ) :
@@ -40,7 +49,7 @@ get_header();
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 					<?php
-			endif;
+				endif;
 			
 				/* Start the Loop */
 				while ( $myphotography_query->have_posts() ) : 
@@ -58,6 +67,7 @@ get_header();
 					endif;
 
 				endwhile;
+
 				?>
 
 			</main><!-- #main -->
@@ -70,6 +80,9 @@ get_header();
 					) 
 				);
 
+				// Reset postdata.
+				wp_reset_postdata();
+
 			else :
 
 				get_template_part( 'template-parts/content', 'none' );
@@ -80,6 +93,10 @@ get_header();
 				<?php
 
 			endif;
+			
+			// Reset main query object.
+				$wp_query = NULL;
+				$wp_query = $myphotography_temp_query;
 			?>
 </div>
 
